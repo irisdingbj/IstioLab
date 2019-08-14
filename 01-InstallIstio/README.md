@@ -89,5 +89,5 @@ ibmcloud ks cluster-addon-enable istio-extras --cluster $MYCLUSTER
 
    输入`ctrl+c`结束观察。
 
-恭喜您已经完成了Istio的安装！可以进行下面的实验了。
+恭喜您已经完成了Istio的安装！可以继续进行 [02-DeployGuestBook](../02-DeployGuestBook/README.md).
 
