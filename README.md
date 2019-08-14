@@ -12,7 +12,7 @@ Istio Lab是为Istio训练营准备的实验，让您轻松掌握[Istio](https:/
 - [部署 Guestbook样例应用](02-DeployGuestBook/README.md)
 - [使用 metrics, logging and tracing 来观察微服务](03-ObserveGuestBook/README.md)
 - [创建Istio ingress gateway](04-ExpostSvcViaIngressGateway/README.md)
-- [对微服务进行流量管控，例如：A/B 测试， 金丝雀部署等](05-TrafficManagement/README.md)
+- [对微服务进行流量管控](05-TrafficManagement/README.md)
 
 
 
