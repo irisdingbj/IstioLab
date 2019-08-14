@@ -13,8 +13,8 @@ Istio中用来完成流量管控的核心组件是Pilot.  Pilot 使用三种配�
 ### Service Entries
 一个 [ServiceEntry](https://istio.io/docs/reference/config/istio.networking.v1alpha3.html#ServiceEntry) 配置可以使得网格内的服务可以访问网格外的服务。
 
-## The Guestbook app
-在Guestbook应用中定义了一个guestbook服务。 这个服务有两个不同的版本(version 1)和(version 2)。 每个版本根据[guestbook-deployment.yaml](https://github.com/linsun/examples/blob/master/guestbook-go/guestbook-deployment.yaml)和 [guestbook-v2-deployment.yaml](https://github.com/linsun/examples/blob/master/guestbook-go/guestbook-v2-deployment.yaml)中的定义都有多个实例。默认的如果不创建任何规则，Istio会轮询的把请求平均分布在这两个版本上。然后现实中，新版本可能有一些问题，所以在上线之前最好进行A/B测试并遵循金丝雀部署原则。
+## Guestbook 应用简介
+在Guestbook应用中定义了一个guestbook服务。 这个服务有两个不同的版本(version 1)和(version 2)。 每个版本根据[guestbook-deployment.yaml](https://github.com/linsun/examples/blob/master/guestbook-go/guestbook-deployment.yaml)和 [guestbook-v2-deployment.yaml](https://github.com/linsun/examples/blob/master/guestbook-go/guestbook-v2-deployment.yaml)中的定义都有多个实例。默认的如果不创建任何规则，Istio会轮询的把请求平均分布在这两个版本上。然而现实中，新版本可能有一些问题，所以在上线之前最好进行A/B测试并遵循金丝雀部署原则。
 
 
 ### 使用进行A/B testing 
@@ -128,3 +128,5 @@ spec:
 通过这个规则，我们把80%的流量导入v1版本， 20%的流量导入v2版本。
 你可以在浏览器中多次访问guestbook来查看。请注意在Mac上通过command + Shift + R，或者通过 Ctrl + F5 在windows上来确保刷新应用访问。
 
+恭喜！你已经完成了所有的实验，现在可以通过https://cognitiveclass.ai/badges/beyond-the-basics-istio-and-ibm-cloud-kubernetes-service/ 申请一个
+Badge了！
