@@ -128,5 +128,6 @@ spec:
 通过这个规则，我们把80%的流量导入v1版本， 20%的流量导入v2版本。
 你可以在浏览器中多次访问guestbook来查看。请注意在Mac上通过command + Shift + R，或者通过 Ctrl + F5 在windows上来确保刷新应用访问。
 
+
 恭喜！你已经完成了所有的实验，现在可以通过https://cognitiveclass.ai/badges/beyond-the-basics-istio-and-ibm-cloud-kubernetes-service/ 申请一个
 Badge了！
