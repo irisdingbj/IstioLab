@@ -104,11 +104,8 @@ Let's leverage this feature with Istio ingress gateway:
     mycluster-85f044fc29ce613c264409c04a76c95d-0001.us-east.containers.appdomain.cloud   169.1.1.1   Enabled          Healthy
     ```
 
-Congratulations! You extended the base Ingress features by providing a DNS entry to the Istio service.
+恭喜! 你成功的通过Istio ingress gateway把guestbook暴露到了网格外.
 
-## References:
-[Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-[Istio Ingress](https://istio.io/docs/tasks/traffic-management/ingress.html)
-[Bring your own ALB](https://www.ibm.com/blogs/bluemix/2019/04/bring-your-own-alb-dns-with-health-checks-and-ssl-certificates-beta/)
 
-#### [Continue to Exercise 6 - Traffic Management](../exercise-6/README.md)
+
+#### [继续进行05-TrafficManagement](../05-TrafficManagement/README.md)
