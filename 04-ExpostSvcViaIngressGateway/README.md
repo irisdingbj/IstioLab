@@ -1,4 +1,4 @@
-# 04-ExpostSvcViaIngressGateway - 通过Istio Ingress Gateway暴露微服务
+# 04 - 通过Istio Ingress Gateway暴露微服务
 
 
 ### 通过Istio Ingress Gateway暴露guestbook服务
