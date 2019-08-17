@@ -17,7 +17,7 @@ Guestbook应用程序是用户留下评论的示例应用程序。它由一个We
 1. 在CloudShell窗口中，使用git命令获取guestbook应用代码.
 
     ```shell
-    git clone https://github.com/IBM/guestbook.git
+    git clone https://github.com/irisdingbj/guestbook.git
     ```
 
 2. 进入应用目录.
