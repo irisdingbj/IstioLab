@@ -3,7 +3,8 @@
 
 ## 
 Guestbook应用程序是用户留下评论的示例应用程序。它由一个Web前端，用于存储的Redis数据库和一组复制的Redis数据库组成。我们还将该应用程序与Watson Tone Analyzer集成，该分析器可检测用户评论中的情绪并使用表情符号进行回复。
-![](https://github.com/irisdingbj/IstioLab/blob/master/images/GuestBook.png)
+
+![](https://github.com/irisdingbj/IstioLab/raw/master/images/guestbook-intro.png)
 
 ### 下载IstioLab需要的资源文件
 1. 在CloudShell窗口中，使用git命令获取本次workshop的资源文件.
@@ -144,11 +145,11 @@ Watson Tone Analyzer 检测用户在guestbook应用中输入反馈的语气，�
 
 1. 在CloudShell中如图所示点击铅笔按钮打开文件浏览器.
 
-    ![](https://github.com/irisdingbj/IstioLab/blob/master/images/Find-analyzer-deployment.png)
+![](https://github.com/irisdingbj/IstioLab/raw/master/images/Find-analyzer-deployment.png)
 
 2. 点击 `Files` 并进入到guestbook/v2/analyzer-deployment.yaml.
 
-    ![](https://github.com/irisdingbj/IstioLab/blob/master/images/edit-analyzer-deployment.png)
+![](https://github.com/irisdingbj/IstioLab/raw/master/images/edit-analyzer-deployment.png)
 
 3. 在文件底部找到`env` 部分. 用`pY6eUsBGngRWJYY9jzRFlS8l1eetG31Kasf4j2X-F-E1`代替 YOUR_API_KEY. 用`https://gateway.watsonplatform.net/tone-analyzer/api`代替YOUR_URL .保存文件修改并关闭文件浏览器.
 
