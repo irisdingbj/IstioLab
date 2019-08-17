@@ -37,7 +37,7 @@ Istio Lab使用了IBM公有云上的Kubernetes集群，以及一个云上的命�
 
    在CloudShell页面，输入：
    ```text
-   <your_cluster_name>
+   export MYCLUSTER=<your_cluster_name>
    ```
 
 二，获取你的集群的更多信息：
