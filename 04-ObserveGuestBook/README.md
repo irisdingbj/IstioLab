@@ -21,17 +21,11 @@
     kubectl create -f guestbook-telemetry.yaml
     ```
 
-1. 获得访问 guestbook的地址，使用下面输出的 EXTERNAL-IP来访问:
-
-    ```shell
-    kubectl get service guestbook -n default
-    ```
-
-在浏览器中打开 external ip 地址来访问 guestbook.
+1. 在浏览器中打开 INGRESS_IP 地址来访问 guestbook.
 
 ![](https://github.com/irisdingbj/IstioLab/raw/master/images/GuestBook.png)
 
-4. 模拟一些到guestbook的访问负载.
+2. 模拟一些到guestbook的访问负载.
 
     ```shell
     for i in {1..20}; do sleep 0.5; curl http://<INGRESS_IP>/; done
