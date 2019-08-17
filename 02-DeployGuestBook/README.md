@@ -3,10 +3,11 @@
 
 
 ### 下载Guestbook样例应用
-1. Clone the Guestbook app into the `workshop` directory.
+
+1. 在CloudShell窗口中，使用git命令获取guestbook应用代码.
 
     ```shell
-    git clone https://github.com/IBM/guestbook.git ../guestbook
+    git clone https://github.com/IBM/guestbook.git
     ```
 
 2. 进入应用目录.

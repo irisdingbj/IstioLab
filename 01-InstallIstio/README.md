@@ -10,10 +10,16 @@ IBM公有云上提供的Kubernetes集群可以一键安装Istio，省去安装�
 
 ## 第一步：使用IBM Cloud命令行工具安装
 
-在CloudShell窗口中执行下面的命令，这个命令会自动安装Istio和Knative。
+在CloudShell窗口中执行下面的命令，这个命令会自动安装Istio。
 
 ```text
 ibmcloud ks cluster-addon-enable istio-extras --cluster $MYCLUSTER
+```
+提示是否要安装Istio1.2.4时，输入`y`
+```text
+Enabling add-on istio-extras for cluster jtc-workshop01...
+The istio add-on version 1.2.4 is required to enable the istio-extras add-on. Enable istio? [y/N]> y
+OK
 ```
 
 整个安装过程大约需要几分钟，请耐心等待，可以通过下面步骤检查安装进程。
