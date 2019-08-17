@@ -9,7 +9,7 @@ Guestbook应用程序是用户留下评论的示例应用程序。它由一个We
 1. 在CloudShell窗口中，使用git命令获取本次workshop的资源文件.
 
     ```shell
-    https://github.com/irisdingbj/istio101.git
+    git clone https://github.com/irisdingbj/istio101.git
     ``` 
 
 ### 下载Guestbook样例应用
@@ -150,7 +150,7 @@ Watson Tone Analyzer 检测用户在guestbook应用中输入反馈的语气，�
 
     ![](https://github.com/irisdingbj/IstioLab/blob/master/images/edit-analyzer-deployment.png)
 
-3. 在文件底部找到`env` 部分. 用`jtc2019-key`代替 YOUR_API_KEY. 用`https://gateway.watsonplatform.net/tone-analyzer/api`代替YOUR_URL .保存文件修改并关闭文件浏览器.
+3. 在文件底部找到`env` 部分. 用`pY6eUsBGngRWJYY9jzRFlS8l1eetG31Kasf4j2X-F-E1`代替 YOUR_API_KEY. 用`https://gateway.watsonplatform.net/tone-analyzer/api`代替YOUR_URL .保存文件修改并关闭文件浏览器.
 
 
 4. 使用`guestbook/v2`目录下的`analyzer-deployment.yaml` 和 `analyzer-service.yaml`部署 analyzer pods 和service。 analyzer 服务会发送请求到 Watson Tone Analyzer 来分析消息中的语气.

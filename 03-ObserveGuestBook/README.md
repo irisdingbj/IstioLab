@@ -15,8 +15,9 @@
     ```
 
 2. 配置 Istio 自动收集遥测数据.
+
     ```shell
-    cd ../../plans/
+    cd istio101/workshop/plans/
     kubectl create -f guestbook-telemetry.yaml
     ```
 
