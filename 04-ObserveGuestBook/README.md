@@ -1,4 +1,4 @@
-# 03 - 观察微服务的遥测数据： metrics 和 tracing
+# 04 - 观察微服务的遥测数据
 
 ### Istio 遥测
 
@@ -34,7 +34,7 @@
 4. 模拟一些到guestbook的访问负载.
 
     ```shell
-    for i in {1..20}; do sleep 0.5; curl http://<guestbook_IP>/; done
+    for i in {1..20}; do sleep 0.5; curl http://<INGRESS_IP>/; done
     ```
 
 ## 查看 guestbook 遥测数据
@@ -106,4 +106,4 @@ Kiali 是一个开源的项目，它可以安装在Istio之上并为Istiot中的
 
 
 
-#### [继续进行04-ExpostSvcViaIngressGateway - 通过Istio Ingress Gateway暴露微服务](../04-ExpostSvcViaIngressGateway/README.md)
+#### [继续进行 使用Istio对微服务进行流量管控](../05-TrafficManagement/README.md)

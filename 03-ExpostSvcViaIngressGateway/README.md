@@ -1,4 +1,4 @@
-# 04 - 通过Istio Ingress Gateway暴露微服务
+# 03 - 通过Istio Ingress Gateway暴露微服务
 
 
 ### 通过Istio Ingress Gateway暴露guestbook服务
@@ -32,4 +32,4 @@ export INGRESS_IP=169.6.1.1
 
 
 
-#### [继续进行05-TrafficManagement](../05-TrafficManagement/README.md)
+#### [继续进行 观察微服务的遥测数据](../04-ObserveGuestBook/README.md)
