@@ -4,7 +4,7 @@
 ## 
 Guestbook应用程序是用户留下评论的示例应用程序。它由一个Web前端，用于存储的Redis数据库和一组复制的Redis数据库组成。我们还将该应用程序与Watson Tone Analyzer集成，该分析器可检测用户评论中的情绪并使用表情符号进行回复。
 
-![](https://github.com/irisdingbj/IstioLab/raw/master/images/GuestBook.png)
+![](https://github.com/irisdingbj/IstioLab/raw/master/images/guestbook-intro.png)
 
 ### 下载IstioLab需要的资源文件
 1. 在CloudShell窗口中，使用git命令获取本次workshop的资源文件.
