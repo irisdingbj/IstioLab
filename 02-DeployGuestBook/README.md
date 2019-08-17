@@ -1,6 +1,9 @@
 # 02-部署Guestbook样例应用并注入Istio side car
 
 
+## 
+Guestbook应用程序是用户留下评论的示例应用程序。它由一个Web前端，用于存储的Redis数据库和一组复制的Redis数据库组成。我们还将该应用程序与Watson Tone Analyzer集成，该分析器可检测用户评论中的情绪并使用表情符号进行回复。
+![](https://github.com/irisdingbj/IstioLab/blob/master/images/GuestBook.png)
 
 ### 下载Guestbook样例应用
 
@@ -132,25 +135,19 @@
 ### 使用 Watson Tone Analyzer
 Watson Tone Analyzer 检测用户在guestbook应用中输入反馈的语气，并把这些语气转化成对应的表情符号返回给用户。
 
-1. 在你的IBM cloud账户中创建 Watson Tone Analyzer服务.
+1. 在CloudShell中如图所示点击铅笔按钮打开文件浏览器.
 
-    ```shell
-    ibmcloud resource service-instance-create my-tone-analyzer-service tone-analyzer lite us-south
-    ```
+    ![](https://github.com/irisdingbj/IstioLab/blob/master/images/Find-analyzer-deployment.png)
 
-2. 为你的Tone Analyzer服务创建API key. 记录下面命令输出中的 **apikey** 和 **url** .
+2. 点击 `Files` 并进入到guestbook/v2/analyzer-deployment.yaml.
 
-    ```shell
-    ibmcloud resource service-key-create tone-analyzer-key Manager --instance-name my-tone-analyzer-service
-    ```
+    ![](https://github.com/irisdingbj/IstioLab/blob/master/images/edit-analyzer-deployment.png)
 
-3. 也可以通过下面的命令查看**apikey** 和 **url**:
+3. 在文件底部找到`env` 部分. 用`jtc2019-key`代替 YOUR_API_KEY. 用`https://gateway.watsonplatform.net/tone-analyzer/api`代替YOUR_URL .保存文件修改并关闭文件浏览器:
 
     ```shell
     ibmcloud resource service-key tone-analyzer-key
     ```
-
-4. 打开 `analyzer-deployment.yaml` 并在文件底部找到 env 的部分. 用你自己的API key来代替 `YOUR_API_KEY` ， 用你自己的url来代替 `YOUR_URL`. YOUR_URL 应该是 `https://gateway.watsonplatform.net/tone-analyzer/api`的格式. 保存文件的修改。
 
 5. 使用`guestbook/v2`目录下的`analyzer-deployment.yaml` 和 `analyzer-service.yaml`部署 analyzer pods 和service。 analyzer 服务会发送请求到 Watson Tone Analyzer 来分析消息中的语气.
 
