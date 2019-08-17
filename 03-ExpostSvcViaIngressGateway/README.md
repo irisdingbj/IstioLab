@@ -17,7 +17,7 @@ kubectl get service istio-ingressgateway -n istio-system
 期待输出:
 ```shell
 NAME                   TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)                                       AGE
-istio-ingressgateway   LoadBalancer   172.21.254.53    169.6.1.1       80:31380/TCP,443:31390/TCP,31400:31400/TCP    1m
+istio-ingressgateway   LoadBalancer   172.21.254.53    169.48.64.51       80:31380/TCP,443:31390/TCP,31400:31400/TCP    1m
 2d
 ```
 
@@ -25,7 +25,7 @@ istio-ingressgateway   LoadBalancer   172.21.254.53    169.6.1.1       80:31380/
 
 样例:
 ```
-export INGRESS_IP=169.6.1.1
+export INGRESS_IP=169.48.64.51
 ```
 
 恭喜! 你成功的通过Istio ingress gateway把guestbook暴露到了网格外.
