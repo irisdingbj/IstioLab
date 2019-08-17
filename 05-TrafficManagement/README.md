@@ -61,7 +61,7 @@ spec:
             subset: v1
 ```
 
-这个 `VirtualService` 通过Istio ingress gateway - `guestbook-gateway`来获取进入的网格的流量，把所有的流量都发送到带有"version: v1"标签的pods中。 你可以通过在浏览器中输入guestbook的访问地址来访问guestbook并观察这个行为。 guestbook的访问地址获取方法请参考 [04-ExpostSvcViaIngressGateway](../04-ExpostSvcViaIngressGateway/README.md)。
+这个 `VirtualService` 通过Istio ingress gateway - `guestbook-gateway`来获取进入的网格的流量，把所有的流量都发送到带有"version: v1"标签的pods中。 你可以通过在浏览器中输入guestbook的访问地址来访问guestbook并观察这个行为。 guestbook的访问地址获取方法请参考 [03-ExpostSvcViaIngressGateway](../03-ExpostSvcViaIngressGateway/README.md)。
 
 
 替换`VirtualService` 规则，使得来自Firefox的流量进入带有"version: v2"标签的pods中，其他流量进入带有"version: v1"标签的pods中：
