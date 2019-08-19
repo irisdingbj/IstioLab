@@ -161,6 +161,6 @@ Watson Tone Analyzer 检测用户在guestbook应用中输入反馈的语气，�
     kubectl apply -f analyzer-service.yaml
     ```
 
-恭喜! 你的guestbook 应用已经部署并配置成功. 进入 03-ExpostSvcViaIngressGateway,来观测你的微服务。
+恭喜! 你的guestbook 应用已经部署并配置成功。
 
 #### [继续进行 通过Istio Ingress Gateway暴露微服务](../03-ExpostSvcViaIngressGateway/README.md)
