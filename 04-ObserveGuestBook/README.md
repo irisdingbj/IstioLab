@@ -28,7 +28,7 @@
 2. 模拟一些到guestbook的访问负载.
 
     ```shell
-    for i in {1..20}; do sleep 0.5; curl http://<INGRESS_IP>/; done
+    for i in {1..20}; do sleep 0.5; curl http://$INGRESS_IP/; done
     ```
 
 ## 查看 guestbook 遥测数据
